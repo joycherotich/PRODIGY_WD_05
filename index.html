@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js" defer></script>
+    <title>WEATHER APP</title>
+  </head>
+  <body>
+    <section class="navigation">
+      <!-- Navigation -->
+      <nav>
+        <h2 class="logo-name">WEATHER APP</h2>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          id="searchCityOne"
+          placeholder="Search for a city"
+        />
+        <button type="button" id="showSignIn">Sign in</button>
+      </nav>
+    </section>
+    <section id="login" class="log-in">
+      <!-- login section -->
+      <div class="form-container">
+        <form action="" id="loginForm">
+          <h2>Login Here</h2>
+
+          <div id="login-error-msg-holder">
+            <p id="login-error-msg">
+              Invalid credentials
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Enter username</label>
+            <input type="text" name="username" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Enter password</label>
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              required
+            /><br />
+          </div>
+          <input type="submit" id="loginBtn" class="btn" value="Login" />
+        </form>
+
+        <div id="login-success-msg-holder">
+            <p id="login-success-msg">
+              Successful login
+            </p>
+          </div>
+
+      </div>
+    </section>
+    <section class="weather-container">
+      <!-- weather app -->
+
+      <div class="weather-wrap">
+        <header>
+          <input
+            type="text"
+            autocomplete="off"
+            class="search-box"
+            id="searchCityTwo"
+            placeholder="Search for a city"
+          />
+        </header>
+
+        <main>
+          <section class="location">
+            <div class="city" id="city">Nairobi, KE</div>
+            <div class="date" id="date">Date</div>
+          </section>
+
+          <div class="current">
+            <div class="temp" id="temp">10 °C</div>
+            <div class="weather" id="description">Sunny</div>
+            <div class="hi-low" id="minMax">21°C / 27°C</div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <section>
+      </div>
+    </section>
+  </body>
+</html>
